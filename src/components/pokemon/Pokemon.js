@@ -54,7 +54,6 @@ async componentDidMount() {
     const pokemonRes = await axios.get(pokemonUrl);
     const name = pokemonRes.data.name
     const imageUrl = pokemonRes.data.sprites.front_shiny;
-    const themeColor = `${TYPE_COLORS[types[types.length - 1]]}`;
 
 
     let {hp,attack,defense,speed,specialAttack,specialDefense} = ''
@@ -104,6 +103,7 @@ async componentDidMount() {
             description
         })
     })
+    const themeColor = `${TYPE_COLORS[types[types.length - 1]]}`;
 
    this.setState({
        imageUrl,
@@ -185,7 +185,11 @@ async componentDidMount() {
                     <div className="col-12 col-md-9">
                         <div className="progress">
                             <div className="progress-bar" role="progressBar" style={{
-                                width: `${this.state.stats.defense}%`
+                                width: `${this.state.stats.defense}%`,
+                                backgroundColor: `#${this.state.themeColor}`
+
+
+
                             }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <small>{this.state.stats.defense}</small>
                             </div>
@@ -198,7 +202,9 @@ async componentDidMount() {
                     <div className="col-12 col-md-9">
                         <div className="progress">
                             <div className="progress-bar" role="progressBar" style={{
-                                width: `${this.state.stats.speed}%`
+                                width: `${this.state.stats.speed}%`,
+                                backgroundColor: `#${this.state.themeColor}`
+
                             }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <small>{this.state.stats.speed}</small>
                             </div>
@@ -211,7 +217,10 @@ async componentDidMount() {
                     <div className="col-12 col-md-9">
                         <div className="progress">
                             <div className="progress-bar" role="progressBar" style={{
-                                width: `${this.state.stats.specialAttack}%`
+                                width: `${this.state.stats.specialAttack}%`,
+                                backgroundColor: `#${this.state.themeColor}`
+
+
                             }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <small>{this.state.stats.specialAttack}</small>
                             </div>
@@ -223,7 +232,9 @@ async componentDidMount() {
                     <div className="col-12 col-md-9">
                         <div className="progress">
                             <div className="progress-bar" role="progressBar" style={{
-                                width: `${this.state.stats.specialDefense}%`
+                                width: `${this.state.stats.specialDefense}%`,
+                                backgroundColor: `#${this.state.themeColor}`
+
                             }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <small>{this.state.stats.specialDefense}</small>
                             </div>
