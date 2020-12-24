@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, {Component} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
+import NavBar from "./components/layout/NavBar";
+import Dashboard from "./components/layout/Dashboard";
+import backgroundimage  from './poyo.jpg'
+import Pokemon from './components/pokemon/Pokemon'
+import {HashRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    return (
+        <Router>
+        <div className="App" style={{background: `url(${backgroundimage})`}}>
+        <NavBar></NavBar>
+            <div className="container">
+                <Switch>
+                    <Route exact path="/" component={Dashboard}/>
+                    <Route exact path="/pokemon/:pokemonIndex" component={Pokemon}/>
+                    <Dashboard />
+                </Switch>
+        </div>
+        </div>
+        </Router>
+    );
+  }
 }
-
 export default App;
