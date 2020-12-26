@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28adcd56-909f-44c2-afca-6271f0705190" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/pokemon/Pokemon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon/Pokemon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokemon/PokemonList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon/PokemonList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,9 @@
       <updated>1608745385552</updated>
       <workItem from="1608745387031" duration="3397000" />
       <workItem from="1608749611420" duration="11744000" />
-      <workItem from="1608774039196" duration="6278000" />
+      <workItem from="1608774039196" duration="7045000" />
+      <workItem from="1608857358459" duration="6190000" />
+      <workItem from="1608913980196" duration="2153000" />
     </task>
     <servers />
   </component>

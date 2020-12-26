@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import PokemonCard from "./PokemonCard";
 import axios from 'axios';
 
-export default class PokemonList extends Component {
+export default class PokemonList extends Component {q
     state= {
-        url: "https://pokeapi.co/api/v2/pokemon/?limit=24",
+        url: "https://pokeapi.co/api/v2/pokemon/?limit=151",
         pokemon: null
     };
 
